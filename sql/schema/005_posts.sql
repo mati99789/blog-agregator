@@ -4,3 +4,6 @@ CREATE TABLE posts (
     created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
 
 );
+
+-- +goose down
+DROP TABLE posts;
